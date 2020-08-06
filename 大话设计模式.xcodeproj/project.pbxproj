@@ -18,6 +18,11 @@
 		B64996A024DBB23800C9CDBA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B615602D24DB9621002B2D84 /* Assets.xcassets */; };
 		B64996A124DBB23800C9CDBA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B615602F24DB9621002B2D84 /* LaunchScreen.storyboard */; };
 		B653CC2924DBB0C600920C39 /* XCTest.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B62DAE9424DBB068006DD67A /* XCTest.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		B670047924DBEA0B004094B7 /* CashContext.m in Sources */ = {isa = PBXBuildFile; fileRef = B670047824DBEA0B004094B7 /* CashContext.m */; };
+		B670047C24DBEA55004094B7 /* CashSuper.m in Sources */ = {isa = PBXBuildFile; fileRef = B670047B24DBEA55004094B7 /* CashSuper.m */; };
+		B670048224DBEBF9004094B7 /* CashNormal.m in Sources */ = {isa = PBXBuildFile; fileRef = B670048124DBEBF9004094B7 /* CashNormal.m */; };
+		B670048524DBEC85004094B7 /* CashRebeat.m in Sources */ = {isa = PBXBuildFile; fileRef = B670048424DBEC85004094B7 /* CashRebeat.m */; };
+		B670048824DBED69004094B7 /* CashReturn.m in Sources */ = {isa = PBXBuildFile; fileRef = B670048724DBED69004094B7 /* CashReturn.m */; };
 		B6E6810E24DB9B5000A7D72A /* OperationAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E6810D24DB9B5000A7D72A /* OperationAdd.m */; };
 /* End PBXBuildFile section */
 
@@ -58,6 +63,16 @@
 		B62DAE9424DBB068006DD67A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		B64996A224DBB25400C9CDBA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		B64996A424DBB25D00C9CDBA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		B670047724DBEA0B004094B7 /* CashContext.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CashContext.h; sourceTree = "<group>"; };
+		B670047824DBEA0B004094B7 /* CashContext.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CashContext.m; sourceTree = "<group>"; };
+		B670047A24DBEA55004094B7 /* CashSuper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CashSuper.h; sourceTree = "<group>"; };
+		B670047B24DBEA55004094B7 /* CashSuper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CashSuper.m; sourceTree = "<group>"; };
+		B670048024DBEBF9004094B7 /* CashNormal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CashNormal.h; sourceTree = "<group>"; };
+		B670048124DBEBF9004094B7 /* CashNormal.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CashNormal.m; sourceTree = "<group>"; };
+		B670048324DBEC85004094B7 /* CashRebeat.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CashRebeat.h; sourceTree = "<group>"; };
+		B670048424DBEC85004094B7 /* CashRebeat.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CashRebeat.m; sourceTree = "<group>"; };
+		B670048624DBED69004094B7 /* CashReturn.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CashReturn.h; sourceTree = "<group>"; };
+		B670048724DBED69004094B7 /* CashReturn.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CashReturn.m; sourceTree = "<group>"; };
 		B6E6810C24DB9B5000A7D72A /* OperationAdd.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OperationAdd.h; sourceTree = "<group>"; };
 		B6E6810D24DB9B5000A7D72A /* OperationAdd.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OperationAdd.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -77,6 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				B615603A24DB9803002B2D84 /* 简单工厂模式 */,
+				B670047624DBDEA7004094B7 /* 策略模式 */,
 				B615602024DB961D002B2D84 /* 大话设计模式 */,
 				B615601F24DB961D002B2D84 /* Products */,
 				B62DAE9324DBB068006DD67A /* Frameworks */,
@@ -133,6 +149,23 @@
 				B62DAE9424DBB068006DD67A /* XCTest.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B670047624DBDEA7004094B7 /* 策略模式 */ = {
+			isa = PBXGroup;
+			children = (
+				B670047724DBEA0B004094B7 /* CashContext.h */,
+				B670047824DBEA0B004094B7 /* CashContext.m */,
+				B670047A24DBEA55004094B7 /* CashSuper.h */,
+				B670047B24DBEA55004094B7 /* CashSuper.m */,
+				B670048024DBEBF9004094B7 /* CashNormal.h */,
+				B670048124DBEBF9004094B7 /* CashNormal.m */,
+				B670048324DBEC85004094B7 /* CashRebeat.h */,
+				B670048424DBEC85004094B7 /* CashRebeat.m */,
+				B670048624DBED69004094B7 /* CashReturn.h */,
+				B670048724DBED69004094B7 /* CashReturn.m */,
+			);
+			path = "策略模式";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -205,15 +238,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B670047924DBEA0B004094B7 /* CashContext.m in Sources */,
 				B6273C7224DB9D8100892311 /* OperationMul.m in Sources */,
 				B6273C6F24DB9D0200892311 /* OperationSub.m in Sources */,
+				B670048224DBEBF9004094B7 /* CashNormal.m in Sources */,
 				B615602924DB961D002B2D84 /* ViewController.m in Sources */,
+				B670048524DBEC85004094B7 /* CashRebeat.m in Sources */,
 				B615602324DB961D002B2D84 /* AppDelegate.m in Sources */,
 				B615603424DB9621002B2D84 /* main.m in Sources */,
 				B6273C7B24DB9ECB00892311 /* OperationFactory.m in Sources */,
 				B6273C7524DB9DE300892311 /* OperationDiv.m in Sources */,
 				B615603D24DB982E002B2D84 /* Operation.m in Sources */,
 				B6E6810E24DB9B5000A7D72A /* OperationAdd.m in Sources */,
+				B670048824DBED69004094B7 /* CashReturn.m in Sources */,
+				B670047C24DBEA55004094B7 /* CashSuper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

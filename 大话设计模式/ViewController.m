@@ -9,6 +9,8 @@
 #import "ViewController.h"
 #import "OperationFactory.h"
 
+#import "CashContext.h"
+
 @interface ViewController ()
 
 @end
@@ -20,7 +22,8 @@
     
     self.view.backgroundColor = [UIColor whiteColor];
     
-    [self simpleFactoryTest];
+//    [self simpleFactoryTest];
+    [self strategyTest];
 }
 
 //简单工厂测试
@@ -44,8 +47,14 @@
     operation.numberA = 600;
     operation.numberB = 100;
     NSLog(@"除法运算的结果为:%f",[operation getResult]);
-    
 }
 
-
+//策略模式测试
+- (void)strategyTest {
+    CashContext *context = [[CashContext alloc] initWithItemStr:@"满300返100"];
+    context.cashSuper.signalPrice = 120;
+    context.cashSuper.number = 5;
+    
+    NSLog(@"折扣后的总价格为%f",[context getResult]);
+}
 @end
