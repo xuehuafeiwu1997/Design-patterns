@@ -21,6 +21,8 @@
 		B66685FA24EA21000007EE5F /* GamePad.m in Sources */ = {isa = PBXBuildFile; fileRef = B66685F924EA21000007EE5F /* GamePad.m */; };
 		B66685FD24EA222B0007EE5F /* GamePadDecorator.m in Sources */ = {isa = PBXBuildFile; fileRef = B66685FC24EA222B0007EE5F /* GamePadDecorator.m */; };
 		B666860024EA23B10007EE5F /* CheatGamePadDecorator.m in Sources */ = {isa = PBXBuildFile; fileRef = B66685FF24EA23B10007EE5F /* CheatGamePadDecorator.m */; };
+		B666860524EA631A0007EE5F /* Intermediary.m in Sources */ = {isa = PBXBuildFile; fileRef = B666860424EA631A0007EE5F /* Intermediary.m */; };
+		B666860824EA63700007EE5F /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = B666860724EA63700007EE5F /* Student.m */; };
 		B670047924DBEA0B004094B7 /* CashContext.m in Sources */ = {isa = PBXBuildFile; fileRef = B670047824DBEA0B004094B7 /* CashContext.m */; };
 		B670047C24DBEA55004094B7 /* CashSuper.m in Sources */ = {isa = PBXBuildFile; fileRef = B670047B24DBEA55004094B7 /* CashSuper.m */; };
 		B670048224DBEBF9004094B7 /* CashNormal.m in Sources */ = {isa = PBXBuildFile; fileRef = B670048124DBEBF9004094B7 /* CashNormal.m */; };
@@ -72,6 +74,11 @@
 		B66685FC24EA222B0007EE5F /* GamePadDecorator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GamePadDecorator.m; sourceTree = "<group>"; };
 		B66685FE24EA23B10007EE5F /* CheatGamePadDecorator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CheatGamePadDecorator.h; sourceTree = "<group>"; };
 		B66685FF24EA23B10007EE5F /* CheatGamePadDecorator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CheatGamePadDecorator.m; sourceTree = "<group>"; };
+		B666860224EA62C90007EE5F /* StudentProtocal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StudentProtocal.h; sourceTree = "<group>"; };
+		B666860324EA631A0007EE5F /* Intermediary.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Intermediary.h; sourceTree = "<group>"; };
+		B666860424EA631A0007EE5F /* Intermediary.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Intermediary.m; sourceTree = "<group>"; };
+		B666860624EA63700007EE5F /* Student.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Student.h; sourceTree = "<group>"; };
+		B666860724EA63700007EE5F /* Student.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Student.m; sourceTree = "<group>"; };
 		B670047724DBEA0B004094B7 /* CashContext.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CashContext.h; sourceTree = "<group>"; };
 		B670047824DBEA0B004094B7 /* CashContext.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CashContext.m; sourceTree = "<group>"; };
 		B670047A24DBEA55004094B7 /* CashSuper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CashSuper.h; sourceTree = "<group>"; };
@@ -100,6 +107,7 @@
 		B615601524DB961D002B2D84 = {
 			isa = PBXGroup;
 			children = (
+				B666860124EA62680007EE5F /* 代理模式 */,
 				B615603A24DB9803002B2D84 /* 简单工厂模式 */,
 				B670047624DBDEA7004094B7 /* 策略模式 */,
 				B66685F724EA20D50007EE5F /* 装饰模式 */,
@@ -172,6 +180,18 @@
 				B66685FF24EA23B10007EE5F /* CheatGamePadDecorator.m */,
 			);
 			path = "装饰模式";
+			sourceTree = "<group>";
+		};
+		B666860124EA62680007EE5F /* 代理模式 */ = {
+			isa = PBXGroup;
+			children = (
+				B666860224EA62C90007EE5F /* StudentProtocal.h */,
+				B666860324EA631A0007EE5F /* Intermediary.h */,
+				B666860424EA631A0007EE5F /* Intermediary.m */,
+				B666860624EA63700007EE5F /* Student.h */,
+				B666860724EA63700007EE5F /* Student.m */,
+			);
+			path = "代理模式";
 			sourceTree = "<group>";
 		};
 		B670047624DBDEA7004094B7 /* 策略模式 */ = {
@@ -265,6 +285,7 @@
 				B6273C7224DB9D8100892311 /* OperationMul.m in Sources */,
 				B6273C6F24DB9D0200892311 /* OperationSub.m in Sources */,
 				B670048224DBEBF9004094B7 /* CashNormal.m in Sources */,
+				B666860524EA631A0007EE5F /* Intermediary.m in Sources */,
 				B615602924DB961D002B2D84 /* ViewController.m in Sources */,
 				B670048524DBEC85004094B7 /* CashRebeat.m in Sources */,
 				B615602324DB961D002B2D84 /* AppDelegate.m in Sources */,
@@ -274,6 +295,7 @@
 				B6273C7524DB9DE300892311 /* OperationDiv.m in Sources */,
 				B615603D24DB982E002B2D84 /* Operation.m in Sources */,
 				B6E6810E24DB9B5000A7D72A /* OperationAdd.m in Sources */,
+				B666860824EA63700007EE5F /* Student.m in Sources */,
 				B670048824DBED69004094B7 /* CashReturn.m in Sources */,
 				B670047C24DBEA55004094B7 /* CashSuper.m in Sources */,
 				B66685FA24EA21000007EE5F /* GamePad.m in Sources */,

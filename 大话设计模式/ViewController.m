@@ -10,6 +10,8 @@
 #import "OperationFactory.h"
 #import "CashContext.h"
 #import "CheatGamePadDecorator.h"
+#import "Student.h"
+#import "Intermediary.h"
 
 @interface ViewController ()
 
@@ -22,9 +24,10 @@
     
     self.view.backgroundColor = [UIColor whiteColor];
     
-//    [self simpleFactoryTest];
-//    [self strategyTest];
-    [self decoratorTest];
+//    [self simpleFactoryTest];//简单工厂模式
+//    [self strategyTest];//策略模式
+//    [self decoratorTest];//装饰模式
+    [self proxyTest];//代理模式
 }
 
 //简单工厂测试
@@ -70,5 +73,13 @@
     
     //实现作弊的方法
     [cheatGamePad cheat];
+}
+
+//代理模式
+- (void)proxyTest {
+    Student *student = [[Student alloc] init];
+    Intermediary *interMidary = [[Intermediary alloc] init];
+    student.delegate = interMidary;
+    [student findHouse];
 }
 @end
