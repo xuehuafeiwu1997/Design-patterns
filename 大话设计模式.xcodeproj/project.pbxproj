@@ -18,6 +18,9 @@
 		B64996A024DBB23800C9CDBA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B615602D24DB9621002B2D84 /* Assets.xcassets */; };
 		B64996A124DBB23800C9CDBA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B615602F24DB9621002B2D84 /* LaunchScreen.storyboard */; };
 		B653CC2924DBB0C600920C39 /* XCTest.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B62DAE9424DBB068006DD67A /* XCTest.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		B66685FA24EA21000007EE5F /* GamePad.m in Sources */ = {isa = PBXBuildFile; fileRef = B66685F924EA21000007EE5F /* GamePad.m */; };
+		B66685FD24EA222B0007EE5F /* GamePadDecorator.m in Sources */ = {isa = PBXBuildFile; fileRef = B66685FC24EA222B0007EE5F /* GamePadDecorator.m */; };
+		B666860024EA23B10007EE5F /* CheatGamePadDecorator.m in Sources */ = {isa = PBXBuildFile; fileRef = B66685FF24EA23B10007EE5F /* CheatGamePadDecorator.m */; };
 		B670047924DBEA0B004094B7 /* CashContext.m in Sources */ = {isa = PBXBuildFile; fileRef = B670047824DBEA0B004094B7 /* CashContext.m */; };
 		B670047C24DBEA55004094B7 /* CashSuper.m in Sources */ = {isa = PBXBuildFile; fileRef = B670047B24DBEA55004094B7 /* CashSuper.m */; };
 		B670048224DBEBF9004094B7 /* CashNormal.m in Sources */ = {isa = PBXBuildFile; fileRef = B670048124DBEBF9004094B7 /* CashNormal.m */; };
@@ -63,6 +66,12 @@
 		B62DAE9424DBB068006DD67A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		B64996A224DBB25400C9CDBA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		B64996A424DBB25D00C9CDBA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		B66685F824EA21000007EE5F /* GamePad.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GamePad.h; sourceTree = "<group>"; };
+		B66685F924EA21000007EE5F /* GamePad.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GamePad.m; sourceTree = "<group>"; };
+		B66685FB24EA222B0007EE5F /* GamePadDecorator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GamePadDecorator.h; sourceTree = "<group>"; };
+		B66685FC24EA222B0007EE5F /* GamePadDecorator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GamePadDecorator.m; sourceTree = "<group>"; };
+		B66685FE24EA23B10007EE5F /* CheatGamePadDecorator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CheatGamePadDecorator.h; sourceTree = "<group>"; };
+		B66685FF24EA23B10007EE5F /* CheatGamePadDecorator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CheatGamePadDecorator.m; sourceTree = "<group>"; };
 		B670047724DBEA0B004094B7 /* CashContext.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CashContext.h; sourceTree = "<group>"; };
 		B670047824DBEA0B004094B7 /* CashContext.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CashContext.m; sourceTree = "<group>"; };
 		B670047A24DBEA55004094B7 /* CashSuper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CashSuper.h; sourceTree = "<group>"; };
@@ -93,6 +102,7 @@
 			children = (
 				B615603A24DB9803002B2D84 /* 简单工厂模式 */,
 				B670047624DBDEA7004094B7 /* 策略模式 */,
+				B66685F724EA20D50007EE5F /* 装饰模式 */,
 				B615602024DB961D002B2D84 /* 大话设计模式 */,
 				B615601F24DB961D002B2D84 /* Products */,
 				B62DAE9324DBB068006DD67A /* Frameworks */,
@@ -149,6 +159,19 @@
 				B62DAE9424DBB068006DD67A /* XCTest.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B66685F724EA20D50007EE5F /* 装饰模式 */ = {
+			isa = PBXGroup;
+			children = (
+				B66685F824EA21000007EE5F /* GamePad.h */,
+				B66685F924EA21000007EE5F /* GamePad.m */,
+				B66685FB24EA222B0007EE5F /* GamePadDecorator.h */,
+				B66685FC24EA222B0007EE5F /* GamePadDecorator.m */,
+				B66685FE24EA23B10007EE5F /* CheatGamePadDecorator.h */,
+				B66685FF24EA23B10007EE5F /* CheatGamePadDecorator.m */,
+			);
+			path = "装饰模式";
 			sourceTree = "<group>";
 		};
 		B670047624DBDEA7004094B7 /* 策略模式 */ = {
@@ -245,6 +268,7 @@
 				B615602924DB961D002B2D84 /* ViewController.m in Sources */,
 				B670048524DBEC85004094B7 /* CashRebeat.m in Sources */,
 				B615602324DB961D002B2D84 /* AppDelegate.m in Sources */,
+				B666860024EA23B10007EE5F /* CheatGamePadDecorator.m in Sources */,
 				B615603424DB9621002B2D84 /* main.m in Sources */,
 				B6273C7B24DB9ECB00892311 /* OperationFactory.m in Sources */,
 				B6273C7524DB9DE300892311 /* OperationDiv.m in Sources */,
@@ -252,6 +276,8 @@
 				B6E6810E24DB9B5000A7D72A /* OperationAdd.m in Sources */,
 				B670048824DBED69004094B7 /* CashReturn.m in Sources */,
 				B670047C24DBEA55004094B7 /* CashSuper.m in Sources */,
+				B66685FA24EA21000007EE5F /* GamePad.m in Sources */,
+				B66685FD24EA222B0007EE5F /* GamePadDecorator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

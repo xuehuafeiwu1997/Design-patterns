@@ -8,8 +8,8 @@
 
 #import "ViewController.h"
 #import "OperationFactory.h"
-
 #import "CashContext.h"
+#import "CheatGamePadDecorator.h"
 
 @interface ViewController ()
 
@@ -23,7 +23,8 @@
     self.view.backgroundColor = [UIColor whiteColor];
     
 //    [self simpleFactoryTest];
-    [self strategyTest];
+//    [self strategyTest];
+    [self decoratorTest];
 }
 
 //简单工厂测试
@@ -56,5 +57,18 @@
     context.cashSuper.number = 5;
     
     NSLog(@"折扣后的总价格为%f",[context getResult]);
+}
+
+//装饰模式测试
+- (void)decoratorTest {
+    //创建cheatGamePad实例
+    CheatGamePadDecorator *cheatGamePad = [[CheatGamePadDecorator alloc] init];
+    
+    //实现GamePad的功能
+    [cheatGamePad up];
+    [cheatGamePad down];
+    
+    //实现作弊的方法
+    [cheatGamePad cheat];
 }
 @end
