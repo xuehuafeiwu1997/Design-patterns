@@ -23,6 +23,10 @@
 		B666860024EA23B10007EE5F /* CheatGamePadDecorator.m in Sources */ = {isa = PBXBuildFile; fileRef = B66685FF24EA23B10007EE5F /* CheatGamePadDecorator.m */; };
 		B666860524EA631A0007EE5F /* Intermediary.m in Sources */ = {isa = PBXBuildFile; fileRef = B666860424EA631A0007EE5F /* Intermediary.m */; };
 		B666860824EA63700007EE5F /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = B666860724EA63700007EE5F /* Student.m */; };
+		B666860D24EA6C6F0007EE5F /* Undergraduate.m in Sources */ = {isa = PBXBuildFile; fileRef = B666860C24EA6C6F0007EE5F /* Undergraduate.m */; };
+		B666861024EA6CE50007EE5F /* Volunteer.m in Sources */ = {isa = PBXBuildFile; fileRef = B666860F24EA6CE50007EE5F /* Volunteer.m */; };
+		B666861424EA6E530007EE5F /* UndergraduateFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = B666861324EA6E530007EE5F /* UndergraduateFactory.m */; };
+		B666861724EA6F0C0007EE5F /* VolunteerFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = B666861624EA6F0C0007EE5F /* VolunteerFactory.m */; };
 		B670047924DBEA0B004094B7 /* CashContext.m in Sources */ = {isa = PBXBuildFile; fileRef = B670047824DBEA0B004094B7 /* CashContext.m */; };
 		B670047C24DBEA55004094B7 /* CashSuper.m in Sources */ = {isa = PBXBuildFile; fileRef = B670047B24DBEA55004094B7 /* CashSuper.m */; };
 		B670048224DBEBF9004094B7 /* CashNormal.m in Sources */ = {isa = PBXBuildFile; fileRef = B670048124DBEBF9004094B7 /* CashNormal.m */; };
@@ -79,6 +83,16 @@
 		B666860424EA631A0007EE5F /* Intermediary.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Intermediary.m; sourceTree = "<group>"; };
 		B666860624EA63700007EE5F /* Student.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Student.h; sourceTree = "<group>"; };
 		B666860724EA63700007EE5F /* Student.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Student.m; sourceTree = "<group>"; };
+		B666860A24EA6BF40007EE5F /* LeiFeng.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LeiFeng.h; sourceTree = "<group>"; };
+		B666860B24EA6C6F0007EE5F /* Undergraduate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Undergraduate.h; sourceTree = "<group>"; };
+		B666860C24EA6C6F0007EE5F /* Undergraduate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Undergraduate.m; sourceTree = "<group>"; };
+		B666860E24EA6CE50007EE5F /* Volunteer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Volunteer.h; sourceTree = "<group>"; };
+		B666860F24EA6CE50007EE5F /* Volunteer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Volunteer.m; sourceTree = "<group>"; };
+		B666861124EA6DC10007EE5F /* LeiFengFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LeiFengFactory.h; sourceTree = "<group>"; };
+		B666861224EA6E530007EE5F /* UndergraduateFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UndergraduateFactory.h; sourceTree = "<group>"; };
+		B666861324EA6E530007EE5F /* UndergraduateFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UndergraduateFactory.m; sourceTree = "<group>"; };
+		B666861524EA6F0C0007EE5F /* VolunteerFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VolunteerFactory.h; sourceTree = "<group>"; };
+		B666861624EA6F0C0007EE5F /* VolunteerFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VolunteerFactory.m; sourceTree = "<group>"; };
 		B670047724DBEA0B004094B7 /* CashContext.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CashContext.h; sourceTree = "<group>"; };
 		B670047824DBEA0B004094B7 /* CashContext.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CashContext.m; sourceTree = "<group>"; };
 		B670047A24DBEA55004094B7 /* CashSuper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CashSuper.h; sourceTree = "<group>"; };
@@ -107,6 +121,7 @@
 		B615601524DB961D002B2D84 = {
 			isa = PBXGroup;
 			children = (
+				B666860924EA6BD00007EE5F /* 工厂模式 */,
 				B666860124EA62680007EE5F /* 代理模式 */,
 				B615603A24DB9803002B2D84 /* 简单工厂模式 */,
 				B670047624DBDEA7004094B7 /* 策略模式 */,
@@ -192,6 +207,23 @@
 				B666860724EA63700007EE5F /* Student.m */,
 			);
 			path = "代理模式";
+			sourceTree = "<group>";
+		};
+		B666860924EA6BD00007EE5F /* 工厂模式 */ = {
+			isa = PBXGroup;
+			children = (
+				B666860A24EA6BF40007EE5F /* LeiFeng.h */,
+				B666860B24EA6C6F0007EE5F /* Undergraduate.h */,
+				B666860C24EA6C6F0007EE5F /* Undergraduate.m */,
+				B666860E24EA6CE50007EE5F /* Volunteer.h */,
+				B666860F24EA6CE50007EE5F /* Volunteer.m */,
+				B666861124EA6DC10007EE5F /* LeiFengFactory.h */,
+				B666861224EA6E530007EE5F /* UndergraduateFactory.h */,
+				B666861324EA6E530007EE5F /* UndergraduateFactory.m */,
+				B666861524EA6F0C0007EE5F /* VolunteerFactory.h */,
+				B666861624EA6F0C0007EE5F /* VolunteerFactory.m */,
+			);
+			path = "工厂模式";
 			sourceTree = "<group>";
 		};
 		B670047624DBDEA7004094B7 /* 策略模式 */ = {
@@ -289,11 +321,15 @@
 				B615602924DB961D002B2D84 /* ViewController.m in Sources */,
 				B670048524DBEC85004094B7 /* CashRebeat.m in Sources */,
 				B615602324DB961D002B2D84 /* AppDelegate.m in Sources */,
+				B666861424EA6E530007EE5F /* UndergraduateFactory.m in Sources */,
 				B666860024EA23B10007EE5F /* CheatGamePadDecorator.m in Sources */,
 				B615603424DB9621002B2D84 /* main.m in Sources */,
+				B666861724EA6F0C0007EE5F /* VolunteerFactory.m in Sources */,
 				B6273C7B24DB9ECB00892311 /* OperationFactory.m in Sources */,
+				B666861024EA6CE50007EE5F /* Volunteer.m in Sources */,
 				B6273C7524DB9DE300892311 /* OperationDiv.m in Sources */,
 				B615603D24DB982E002B2D84 /* Operation.m in Sources */,
+				B666860D24EA6C6F0007EE5F /* Undergraduate.m in Sources */,
 				B6E6810E24DB9B5000A7D72A /* OperationAdd.m in Sources */,
 				B666860824EA63700007EE5F /* Student.m in Sources */,
 				B670048824DBED69004094B7 /* CashReturn.m in Sources */,

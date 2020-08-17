@@ -12,6 +12,8 @@
 #import "CheatGamePadDecorator.h"
 #import "Student.h"
 #import "Intermediary.h"
+#import "UndergraduateFactory.h"
+#import "VolunteerFactory.h"
 
 @interface ViewController ()
 
@@ -27,7 +29,8 @@
 //    [self simpleFactoryTest];//简单工厂模式
 //    [self strategyTest];//策略模式
 //    [self decoratorTest];//装饰模式
-    [self proxyTest];//代理模式
+//    [self proxyTest];//代理模式
+    [self factoryTest];//工厂模式测试
 }
 
 //简单工厂测试
@@ -81,5 +84,22 @@
     Intermediary *interMidary = [[Intermediary alloc] init];
     student.delegate = interMidary;
     [student findHouse];
+}
+
+//工厂模式
+- (void)factoryTest {
+    id<LeiFengFactory> leiFengFactory = [[UndergraduateFactory alloc] init];
+    
+    id<LeiFeng> student = [leiFengFactory createLeiFeng];
+    [student sweep];
+    [student wash];
+    [student buyRice];
+    
+    leiFengFactory = [[VolunteerFactory alloc] init];
+    id<LeiFeng> volunteer = [leiFengFactory createLeiFeng];
+    [volunteer sweep];
+    [volunteer wash];
+    [volunteer buyRice];
+    
 }
 @end
