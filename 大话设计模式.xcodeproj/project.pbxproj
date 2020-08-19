@@ -17,6 +17,10 @@
 		B6273C7B24DB9ECB00892311 /* OperationFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = B6273C7A24DB9ECB00892311 /* OperationFactory.m */; };
 		B64996A024DBB23800C9CDBA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B615602D24DB9621002B2D84 /* Assets.xcassets */; };
 		B64996A124DBB23800C9CDBA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B615602F24DB9621002B2D84 /* LaunchScreen.storyboard */; };
+		B64BE47224ECC62600DBA5AD /* WorkExperience.m in Sources */ = {isa = PBXBuildFile; fileRef = B64BE47124ECC62600DBA5AD /* WorkExperience.m */; };
+		B64BE47524ECC7A000DBA5AD /* Resume.m in Sources */ = {isa = PBXBuildFile; fileRef = B64BE47424ECC7A000DBA5AD /* Resume.m */; };
+		B64BE47824ECCD9F00DBA5AD /* ResumeDeepCopy.m in Sources */ = {isa = PBXBuildFile; fileRef = B64BE47724ECCD9F00DBA5AD /* ResumeDeepCopy.m */; };
+		B64BE47B24ECCF3C00DBA5AD /* ResumeShallowCopy.m in Sources */ = {isa = PBXBuildFile; fileRef = B64BE47A24ECCF3C00DBA5AD /* ResumeShallowCopy.m */; };
 		B653CC2924DBB0C600920C39 /* XCTest.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B62DAE9424DBB068006DD67A /* XCTest.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		B66685FA24EA21000007EE5F /* GamePad.m in Sources */ = {isa = PBXBuildFile; fileRef = B66685F924EA21000007EE5F /* GamePad.m */; };
 		B66685FD24EA222B0007EE5F /* GamePadDecorator.m in Sources */ = {isa = PBXBuildFile; fileRef = B66685FC24EA222B0007EE5F /* GamePadDecorator.m */; };
@@ -72,6 +76,14 @@
 		B62DAE9424DBB068006DD67A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		B64996A224DBB25400C9CDBA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		B64996A424DBB25D00C9CDBA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		B64BE47024ECC62600DBA5AD /* WorkExperience.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WorkExperience.h; sourceTree = "<group>"; };
+		B64BE47124ECC62600DBA5AD /* WorkExperience.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WorkExperience.m; sourceTree = "<group>"; };
+		B64BE47324ECC7A000DBA5AD /* Resume.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Resume.h; sourceTree = "<group>"; };
+		B64BE47424ECC7A000DBA5AD /* Resume.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Resume.m; sourceTree = "<group>"; };
+		B64BE47624ECCD9F00DBA5AD /* ResumeDeepCopy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ResumeDeepCopy.h; sourceTree = "<group>"; };
+		B64BE47724ECCD9F00DBA5AD /* ResumeDeepCopy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ResumeDeepCopy.m; sourceTree = "<group>"; };
+		B64BE47924ECCF3C00DBA5AD /* ResumeShallowCopy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ResumeShallowCopy.h; sourceTree = "<group>"; };
+		B64BE47A24ECCF3C00DBA5AD /* ResumeShallowCopy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ResumeShallowCopy.m; sourceTree = "<group>"; };
 		B66685F824EA21000007EE5F /* GamePad.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GamePad.h; sourceTree = "<group>"; };
 		B66685F924EA21000007EE5F /* GamePad.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GamePad.m; sourceTree = "<group>"; };
 		B66685FB24EA222B0007EE5F /* GamePadDecorator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GamePadDecorator.h; sourceTree = "<group>"; };
@@ -121,6 +133,7 @@
 		B615601524DB961D002B2D84 = {
 			isa = PBXGroup;
 			children = (
+				B64BE46F24ECC58C00DBA5AD /* 原型模式 */,
 				B666860924EA6BD00007EE5F /* 工厂模式 */,
 				B666860124EA62680007EE5F /* 代理模式 */,
 				B615603A24DB9803002B2D84 /* 简单工厂模式 */,
@@ -182,6 +195,21 @@
 				B62DAE9424DBB068006DD67A /* XCTest.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B64BE46F24ECC58C00DBA5AD /* 原型模式 */ = {
+			isa = PBXGroup;
+			children = (
+				B64BE47024ECC62600DBA5AD /* WorkExperience.h */,
+				B64BE47124ECC62600DBA5AD /* WorkExperience.m */,
+				B64BE47324ECC7A000DBA5AD /* Resume.h */,
+				B64BE47424ECC7A000DBA5AD /* Resume.m */,
+				B64BE47624ECCD9F00DBA5AD /* ResumeDeepCopy.h */,
+				B64BE47724ECCD9F00DBA5AD /* ResumeDeepCopy.m */,
+				B64BE47924ECCF3C00DBA5AD /* ResumeShallowCopy.h */,
+				B64BE47A24ECCF3C00DBA5AD /* ResumeShallowCopy.m */,
+			);
+			path = "原型模式";
 			sourceTree = "<group>";
 		};
 		B66685F724EA20D50007EE5F /* 装饰模式 */ = {
@@ -319,6 +347,7 @@
 				B670048224DBEBF9004094B7 /* CashNormal.m in Sources */,
 				B666860524EA631A0007EE5F /* Intermediary.m in Sources */,
 				B615602924DB961D002B2D84 /* ViewController.m in Sources */,
+				B64BE47224ECC62600DBA5AD /* WorkExperience.m in Sources */,
 				B670048524DBEC85004094B7 /* CashRebeat.m in Sources */,
 				B615602324DB961D002B2D84 /* AppDelegate.m in Sources */,
 				B666861424EA6E530007EE5F /* UndergraduateFactory.m in Sources */,
@@ -326,7 +355,9 @@
 				B615603424DB9621002B2D84 /* main.m in Sources */,
 				B666861724EA6F0C0007EE5F /* VolunteerFactory.m in Sources */,
 				B6273C7B24DB9ECB00892311 /* OperationFactory.m in Sources */,
+				B64BE47B24ECCF3C00DBA5AD /* ResumeShallowCopy.m in Sources */,
 				B666861024EA6CE50007EE5F /* Volunteer.m in Sources */,
+				B64BE47824ECCD9F00DBA5AD /* ResumeDeepCopy.m in Sources */,
 				B6273C7524DB9DE300892311 /* OperationDiv.m in Sources */,
 				B615603D24DB982E002B2D84 /* Operation.m in Sources */,
 				B666860D24EA6C6F0007EE5F /* Undergraduate.m in Sources */,
@@ -335,6 +366,7 @@
 				B670048824DBED69004094B7 /* CashReturn.m in Sources */,
 				B670047C24DBEA55004094B7 /* CashSuper.m in Sources */,
 				B66685FA24EA21000007EE5F /* GamePad.m in Sources */,
+				B64BE47524ECC7A000DBA5AD /* Resume.m in Sources */,
 				B66685FD24EA222B0007EE5F /* GamePadDecorator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

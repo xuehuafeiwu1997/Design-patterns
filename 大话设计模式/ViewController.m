@@ -14,6 +14,8 @@
 #import "Intermediary.h"
 #import "UndergraduateFactory.h"
 #import "VolunteerFactory.h"
+#import "ResumeShallowCopy.h"
+#import "ResumeDeepCopy.h"
 
 @interface ViewController ()
 
@@ -30,7 +32,8 @@
 //    [self strategyTest];//策略模式
 //    [self decoratorTest];//装饰模式
 //    [self proxyTest];//代理模式
-    [self factoryTest];//工厂模式测试
+//    [self factoryTest];//工厂模式测试
+    [self protoTypeTest];//原型模式测试
 }
 
 //简单工厂测试
@@ -101,5 +104,26 @@
     [volunteer wash];
     [volunteer buyRice];
     
+}
+
+//原型模式测试
+- (void)protoTypeTest {
+    Resume *resume1 = [[ResumeDeepCopy alloc] initWithName:@"大鸟"];
+    [resume1 setPersonalInfoWithSex:@"男" age:@"29"];
+    [resume1 setWorkExperienceWithWorkDate:@"1998-2000" company:@"XX 公司"];
+    NSLog(@"Retain count is %ld", CFGetRetainCount((__bridge CFTypeRef)resume1));
+    
+    Resume *resume2 = [resume1 copy];
+    [resume2 setWorkExperienceWithWorkDate:@"1998-2006" company:@"YY 企业"];
+    NSLog(@"Retain count is %ld", CFGetRetainCount((__bridge CFTypeRef)resume2));
+    
+    Resume *resume3 = [resume1 copy];
+      [resume3 setPersonalInfoWithSex:@"男" age:@"24"];
+      [resume3 setWorkExperienceWithWorkDate:@"1998-2003" company:@"ZZ 企业"];
+      NSLog(@"Retain count is %ld", CFGetRetainCount((__bridge CFTypeRef)resume3));
+    
+    [resume1 display];
+    [resume2 display];
+    [resume3 display];
 }
 @end
