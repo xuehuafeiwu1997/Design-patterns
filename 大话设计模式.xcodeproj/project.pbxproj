@@ -48,6 +48,14 @@
 		B698D00A24EF6E820061478A /* PersonDirector.m in Sources */ = {isa = PBXBuildFile; fileRef = B698D00924EF6E820061478A /* PersonDirector.m */; };
 		B698D00D24EF6FE90061478A /* PersonFatBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = B698D00C24EF6FE90061478A /* PersonFatBuilder.m */; };
 		B698D01024EF71080061478A /* PersonThinBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = B698D00F24EF71080061478A /* PersonThinBuilder.m */; };
+		B698D01524EFA05C0061478A /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = B698D01424EFA05C0061478A /* User.m */; };
+		B698D01824EFA0BD0061478A /* Department.m in Sources */ = {isa = PBXBuildFile; fileRef = B698D01724EFA0BD0061478A /* Department.m */; };
+		B698D01C24EFA1A30061478A /* SQLServerUser.m in Sources */ = {isa = PBXBuildFile; fileRef = B698D01B24EFA1A30061478A /* SQLServerUser.m */; };
+		B698D01F24EFA23C0061478A /* AccessUser.m in Sources */ = {isa = PBXBuildFile; fileRef = B698D01E24EFA23C0061478A /* AccessUser.m */; };
+		B698D02324EFA3560061478A /* SQLServerDepartment.m in Sources */ = {isa = PBXBuildFile; fileRef = B698D02224EFA3560061478A /* SQLServerDepartment.m */; };
+		B698D02624EFA4200061478A /* AccessDepartment.m in Sources */ = {isa = PBXBuildFile; fileRef = B698D02524EFA4200061478A /* AccessDepartment.m */; };
+		B698D02D24EFA5650061478A /* SQLServerFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = B698D02C24EFA5650061478A /* SQLServerFactory.m */; };
+		B698D03024EFA61E0061478A /* AccessFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = B698D02F24EFA61E0061478A /* AccessFactory.m */; };
 		B6E6810E24DB9B5000A7D72A /* OperationAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E6810D24DB9B5000A7D72A /* OperationAdd.m */; };
 /* End PBXBuildFile section */
 
@@ -152,6 +160,25 @@
 		B698D00C24EF6FE90061478A /* PersonFatBuilder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PersonFatBuilder.m; sourceTree = "<group>"; };
 		B698D00E24EF71080061478A /* PersonThinBuilder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PersonThinBuilder.h; sourceTree = "<group>"; };
 		B698D00F24EF71080061478A /* PersonThinBuilder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PersonThinBuilder.m; sourceTree = "<group>"; };
+		B698D01324EFA05C0061478A /* User.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		B698D01424EFA05C0061478A /* User.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		B698D01624EFA0BD0061478A /* Department.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Department.h; sourceTree = "<group>"; };
+		B698D01724EFA0BD0061478A /* Department.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Department.m; sourceTree = "<group>"; };
+		B698D01924EFA11B0061478A /* IUser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IUser.h; sourceTree = "<group>"; };
+		B698D01A24EFA1A30061478A /* SQLServerUser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SQLServerUser.h; sourceTree = "<group>"; };
+		B698D01B24EFA1A30061478A /* SQLServerUser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SQLServerUser.m; sourceTree = "<group>"; };
+		B698D01D24EFA23C0061478A /* AccessUser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AccessUser.h; sourceTree = "<group>"; };
+		B698D01E24EFA23C0061478A /* AccessUser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AccessUser.m; sourceTree = "<group>"; };
+		B698D02024EFA2C00061478A /* IDepartment.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IDepartment.h; sourceTree = "<group>"; };
+		B698D02124EFA3560061478A /* SQLServerDepartment.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SQLServerDepartment.h; sourceTree = "<group>"; };
+		B698D02224EFA3560061478A /* SQLServerDepartment.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SQLServerDepartment.m; sourceTree = "<group>"; };
+		B698D02424EFA4200061478A /* AccessDepartment.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AccessDepartment.h; sourceTree = "<group>"; };
+		B698D02524EFA4200061478A /* AccessDepartment.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AccessDepartment.m; sourceTree = "<group>"; };
+		B698D02A24EFA4D60061478A /* IFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IFactory.h; sourceTree = "<group>"; };
+		B698D02B24EFA5650061478A /* SQLServerFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SQLServerFactory.h; sourceTree = "<group>"; };
+		B698D02C24EFA5650061478A /* SQLServerFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SQLServerFactory.m; sourceTree = "<group>"; };
+		B698D02E24EFA61E0061478A /* AccessFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AccessFactory.h; sourceTree = "<group>"; };
+		B698D02F24EFA61E0061478A /* AccessFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AccessFactory.m; sourceTree = "<group>"; };
 		B6E6810C24DB9B5000A7D72A /* OperationAdd.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OperationAdd.h; sourceTree = "<group>"; };
 		B6E6810D24DB9B5000A7D72A /* OperationAdd.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OperationAdd.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -170,6 +197,7 @@
 		B615601524DB961D002B2D84 = {
 			isa = PBXGroup;
 			children = (
+				B698D01124EF9F3F0061478A /* 抽象工厂模式 */,
 				B698D00624EF6CBD0061478A /* 建造者模式 */,
 				B698CFF324EF62DE0061478A /* 外观模式 */,
 				B64BE4E024EF5CAB00DBA5AD /* 模版方法模式 */,
@@ -357,6 +385,40 @@
 			path = "建造者模式";
 			sourceTree = "<group>";
 		};
+		B698D01124EF9F3F0061478A /* 抽象工厂模式 */ = {
+			isa = PBXGroup;
+			children = (
+				B698D01224EFA0470061478A /* Entity */,
+			);
+			path = "抽象工厂模式";
+			sourceTree = "<group>";
+		};
+		B698D01224EFA0470061478A /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				B698D01324EFA05C0061478A /* User.h */,
+				B698D01424EFA05C0061478A /* User.m */,
+				B698D01624EFA0BD0061478A /* Department.h */,
+				B698D01724EFA0BD0061478A /* Department.m */,
+				B698D01924EFA11B0061478A /* IUser.h */,
+				B698D01A24EFA1A30061478A /* SQLServerUser.h */,
+				B698D01B24EFA1A30061478A /* SQLServerUser.m */,
+				B698D01D24EFA23C0061478A /* AccessUser.h */,
+				B698D01E24EFA23C0061478A /* AccessUser.m */,
+				B698D02024EFA2C00061478A /* IDepartment.h */,
+				B698D02124EFA3560061478A /* SQLServerDepartment.h */,
+				B698D02224EFA3560061478A /* SQLServerDepartment.m */,
+				B698D02424EFA4200061478A /* AccessDepartment.h */,
+				B698D02524EFA4200061478A /* AccessDepartment.m */,
+				B698D02A24EFA4D60061478A /* IFactory.h */,
+				B698D02B24EFA5650061478A /* SQLServerFactory.h */,
+				B698D02C24EFA5650061478A /* SQLServerFactory.m */,
+				B698D02E24EFA61E0061478A /* AccessFactory.h */,
+				B698D02F24EFA61E0061478A /* AccessFactory.m */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -427,19 +489,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B698D01524EFA05C0061478A /* User.m in Sources */,
 				B670047924DBEA0B004094B7 /* CashContext.m in Sources */,
 				B6273C7224DB9D8100892311 /* OperationMul.m in Sources */,
+				B698D02324EFA3560061478A /* SQLServerDepartment.m in Sources */,
 				B6273C6F24DB9D0200892311 /* OperationSub.m in Sources */,
 				B698CFFC24EF656E0061478A /* Stock1.m in Sources */,
 				B670048224DBEBF9004094B7 /* CashNormal.m in Sources */,
+				B698D01C24EFA1A30061478A /* SQLServerUser.m in Sources */,
 				B666860524EA631A0007EE5F /* Intermediary.m in Sources */,
 				B698CFF624EF64830061478A /* NationalDebt1.m in Sources */,
 				B698CFF924EF64DF0061478A /* Realty1.m in Sources */,
+				B698D02624EFA4200061478A /* AccessDepartment.m in Sources */,
 				B615602924DB961D002B2D84 /* ViewController.m in Sources */,
 				B698D01024EF71080061478A /* PersonThinBuilder.m in Sources */,
 				B698D00A24EF6E820061478A /* PersonDirector.m in Sources */,
+				B698D01F24EFA23C0061478A /* AccessUser.m in Sources */,
 				B64BE4E624EF5D3100DBA5AD /* TestPaper.m in Sources */,
 				B64BE47224ECC62600DBA5AD /* WorkExperience.m in Sources */,
+				B698D02D24EFA5650061478A /* SQLServerFactory.m in Sources */,
 				B698CFFF24EF66770061478A /* Stock2.m in Sources */,
 				B670048524DBEC85004094B7 /* CashRebeat.m in Sources */,
 				B615602324DB961D002B2D84 /* AppDelegate.m in Sources */,
@@ -463,7 +531,9 @@
 				B670047C24DBEA55004094B7 /* CashSuper.m in Sources */,
 				B66685FA24EA21000007EE5F /* GamePad.m in Sources */,
 				B698D00224EF66DB0061478A /* Stock3.m in Sources */,
+				B698D03024EFA61E0061478A /* AccessFactory.m in Sources */,
 				B64BE47524ECC7A000DBA5AD /* Resume.m in Sources */,
+				B698D01824EFA0BD0061478A /* Department.m in Sources */,
 				B66685FD24EA222B0007EE5F /* GamePadDecorator.m in Sources */,
 				B64BE4E924EF5E0600DBA5AD /* TestPaperA.m in Sources */,
 			);

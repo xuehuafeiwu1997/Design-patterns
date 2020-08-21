@@ -23,6 +23,8 @@
 #import "PersonThinBuilder.h"
 #import "PersonFatBuilder.h"
 #import "PersonDirector.h"
+#import "SQLServerFactory.h"
+#import "AccessFactory.h"
 
 @interface ViewController ()
 
@@ -43,7 +45,8 @@
 //    [self protoTypeTest];//原型模式测试
 //    [self templateMethodTest];//模版方法模式
 //    [self facadeTest];//外观模式
-    [self builderTest];//建造者模式
+//    [self builderTest];//建造者模式
+    [self abstractFactoryTest];//抽象工厂模式
 }
 
 //简单工厂测试
@@ -168,6 +171,23 @@
     personBuilder = [[PersonFatBuilder alloc] init];
     personDirector = [[PersonDirector alloc] initWithPersonBuilder:personBuilder];
     [personDirector builderSon];
+}
+
+//抽象工厂测试
+- (void)abstractFactoryTest {
+    User *user = [[User alloc] init];
+    Department *department = [[Department alloc] init];
+    
+//    id<IFactory> factory = [[SQLServerFactory alloc] init];
+    id<IFactory> factory = [[AccessFactory alloc] init];
+    
+    id<IUser> iUser = [factory createUser];
+    [iUser insert:user];
+    [iUser getUser:@"1"];
+    
+    id<IDepartment> iDepartment = [factory createDepartment];
+    [iDepartment insert:department];
+    [iDepartment getDepartment:@"1"];
 }
 
 @end
