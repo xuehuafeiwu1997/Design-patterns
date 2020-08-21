@@ -25,6 +25,7 @@
 #import "PersonDirector.h"
 #import "SQLServerFactory.h"
 #import "AccessFactory.h"
+#import "Work.h"
 
 @interface ViewController ()
 
@@ -46,7 +47,8 @@
 //    [self templateMethodTest];//模版方法模式
 //    [self facadeTest];//外观模式
 //    [self builderTest];//建造者模式
-    [self abstractFactoryTest];//抽象工厂模式
+//    [self abstractFactoryTest];//抽象工厂模式
+    [self stateTest];//状态模式
 }
 
 //简单工厂测试
@@ -188,6 +190,36 @@
     id<IDepartment> iDepartment = [factory createDepartment];
     [iDepartment insert:department];
     [iDepartment getDepartment:@"1"];
+}
+
+//状态模式测试
+- (void)stateTest {
+    Work *work = [[Work alloc] init];
+    
+    work.hour = 9;
+    [work writeProgram];
+    
+    work.hour = 10;
+    [work writeProgram];
+    
+    work.hour = 12;
+    [work writeProgram];
+    
+    work.hour = 13;
+    [work writeProgram];
+    
+    work.hour = 14;
+    [work writeProgram];
+    
+    work.hour = 17;
+    work.finished = NO;
+    [work writeProgram];
+    
+    work.hour = 19;
+    [work writeProgram];
+    
+    work.hour = 21;
+    [work writeProgram];
 }
 
 @end
