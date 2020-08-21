@@ -63,6 +63,10 @@
 		B698D04124EFB47E0061478A /* EveningState.m in Sources */ = {isa = PBXBuildFile; fileRef = B698D04024EFB47E0061478A /* EveningState.m */; };
 		B698D04424EFB55B0061478A /* RestState.m in Sources */ = {isa = PBXBuildFile; fileRef = B698D04324EFB55B0061478A /* RestState.m */; };
 		B698D04724EFB58D0061478A /* SleepingState.m in Sources */ = {isa = PBXBuildFile; fileRef = B698D04624EFB58D0061478A /* SleepingState.m */; };
+		B698D04B24EFCC6F0061478A /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = B698D04A24EFCC6F0061478A /* Player.m */; };
+		B698D04E24EFCD350061478A /* ForeignCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = B698D04D24EFCD350061478A /* ForeignCenter.m */; };
+		B698D05124EFCECA0061478A /* Translator.m in Sources */ = {isa = PBXBuildFile; fileRef = B698D05024EFCECA0061478A /* Translator.m */; };
+		B698D05424EFD18E0061478A /* Forwards.m in Sources */ = {isa = PBXBuildFile; fileRef = B698D05324EFD18E0061478A /* Forwards.m */; };
 		B6E6810E24DB9B5000A7D72A /* OperationAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E6810D24DB9B5000A7D72A /* OperationAdd.m */; };
 /* End PBXBuildFile section */
 
@@ -201,6 +205,14 @@
 		B698D04324EFB55B0061478A /* RestState.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RestState.m; sourceTree = "<group>"; };
 		B698D04524EFB58D0061478A /* SleepingState.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SleepingState.h; sourceTree = "<group>"; };
 		B698D04624EFB58D0061478A /* SleepingState.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SleepingState.m; sourceTree = "<group>"; };
+		B698D04924EFCC6F0061478A /* Player.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Player.h; sourceTree = "<group>"; };
+		B698D04A24EFCC6F0061478A /* Player.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Player.m; sourceTree = "<group>"; };
+		B698D04C24EFCD350061478A /* ForeignCenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ForeignCenter.h; sourceTree = "<group>"; };
+		B698D04D24EFCD350061478A /* ForeignCenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ForeignCenter.m; sourceTree = "<group>"; };
+		B698D04F24EFCECA0061478A /* Translator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Translator.h; sourceTree = "<group>"; };
+		B698D05024EFCECA0061478A /* Translator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Translator.m; sourceTree = "<group>"; };
+		B698D05224EFD18E0061478A /* Forwards.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Forwards.h; sourceTree = "<group>"; };
+		B698D05324EFD18E0061478A /* Forwards.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Forwards.m; sourceTree = "<group>"; };
 		B6E6810C24DB9B5000A7D72A /* OperationAdd.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OperationAdd.h; sourceTree = "<group>"; };
 		B6E6810D24DB9B5000A7D72A /* OperationAdd.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OperationAdd.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -219,6 +231,7 @@
 		B615601524DB961D002B2D84 = {
 			isa = PBXGroup;
 			children = (
+				B698D04824EFCC500061478A /* 适配器模式 */,
 				B698D03124EFAEAF0061478A /* 状态模式 */,
 				B698D01124EF9F3F0061478A /* 抽象工厂模式 */,
 				B698D00624EF6CBD0061478A /* 建造者模式 */,
@@ -464,6 +477,21 @@
 			path = "状态模式";
 			sourceTree = "<group>";
 		};
+		B698D04824EFCC500061478A /* 适配器模式 */ = {
+			isa = PBXGroup;
+			children = (
+				B698D04924EFCC6F0061478A /* Player.h */,
+				B698D04A24EFCC6F0061478A /* Player.m */,
+				B698D05224EFD18E0061478A /* Forwards.h */,
+				B698D05324EFD18E0061478A /* Forwards.m */,
+				B698D04C24EFCD350061478A /* ForeignCenter.h */,
+				B698D04D24EFCD350061478A /* ForeignCenter.m */,
+				B698D04F24EFCECA0061478A /* Translator.h */,
+				B698D05024EFCECA0061478A /* Translator.m */,
+			);
+			path = "适配器模式";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -541,12 +569,14 @@
 				B698D03424EFB0030061478A /* Work.m in Sources */,
 				B6273C6F24DB9D0200892311 /* OperationSub.m in Sources */,
 				B698CFFC24EF656E0061478A /* Stock1.m in Sources */,
+				B698D05424EFD18E0061478A /* Forwards.m in Sources */,
 				B698D03E24EFB3AC0061478A /* AftersoonState.m in Sources */,
 				B670048224DBEBF9004094B7 /* CashNormal.m in Sources */,
 				B698D04424EFB55B0061478A /* RestState.m in Sources */,
 				B698D01C24EFA1A30061478A /* SQLServerUser.m in Sources */,
 				B666860524EA631A0007EE5F /* Intermediary.m in Sources */,
 				B698CFF624EF64830061478A /* NationalDebt1.m in Sources */,
+				B698D04E24EFCD350061478A /* ForeignCenter.m in Sources */,
 				B698CFF924EF64DF0061478A /* Realty1.m in Sources */,
 				B698D02624EFA4200061478A /* AccessDepartment.m in Sources */,
 				B615602924DB961D002B2D84 /* ViewController.m in Sources */,
@@ -562,6 +592,7 @@
 				B698D00524EF67820061478A /* Fund.m in Sources */,
 				B666861424EA6E530007EE5F /* UndergraduateFactory.m in Sources */,
 				B698CFF224EF5F170061478A /* TestPaperB.m in Sources */,
+				B698D05124EFCECA0061478A /* Translator.m in Sources */,
 				B698D00D24EF6FE90061478A /* PersonFatBuilder.m in Sources */,
 				B666860024EA23B10007EE5F /* CheatGamePadDecorator.m in Sources */,
 				B615603424DB9621002B2D84 /* main.m in Sources */,
@@ -573,6 +604,7 @@
 				B6273C7524DB9DE300892311 /* OperationDiv.m in Sources */,
 				B698D03B24EFB2EF0061478A /* NoonState.m in Sources */,
 				B615603D24DB982E002B2D84 /* Operation.m in Sources */,
+				B698D04B24EFCC6F0061478A /* Player.m in Sources */,
 				B666860D24EA6C6F0007EE5F /* Undergraduate.m in Sources */,
 				B6E6810E24DB9B5000A7D72A /* OperationAdd.m in Sources */,
 				B666860824EA63700007EE5F /* Student.m in Sources */,

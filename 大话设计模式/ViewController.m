@@ -26,6 +26,8 @@
 #import "SQLServerFactory.h"
 #import "AccessFactory.h"
 #import "Work.h"
+#import "Translator.h"
+#import "Forwards.h"
 
 @interface ViewController ()
 
@@ -48,7 +50,8 @@
 //    [self facadeTest];//外观模式
 //    [self builderTest];//建造者模式
 //    [self abstractFactoryTest];//抽象工厂模式
-    [self stateTest];//状态模式
+//    [self stateTest];//状态模式
+    [self adapterTest];//适配器模式测试
 }
 
 //简单工厂测试
@@ -220,6 +223,16 @@
     
     work.hour = 21;
     [work writeProgram];
+}
+
+//适配器模式测试
+- (void)adapterTest {
+    Player *b = [[Forwards alloc] initWithName:@"Game"];
+    [b attack];
+    
+    Translator *t = [[Translator alloc] initWithName:@"Risker"];
+    [t attack];
+    [t defense];
 }
 
 @end
