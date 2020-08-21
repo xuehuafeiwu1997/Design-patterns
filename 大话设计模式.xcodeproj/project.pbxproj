@@ -21,6 +21,8 @@
 		B64BE47524ECC7A000DBA5AD /* Resume.m in Sources */ = {isa = PBXBuildFile; fileRef = B64BE47424ECC7A000DBA5AD /* Resume.m */; };
 		B64BE47824ECCD9F00DBA5AD /* ResumeDeepCopy.m in Sources */ = {isa = PBXBuildFile; fileRef = B64BE47724ECCD9F00DBA5AD /* ResumeDeepCopy.m */; };
 		B64BE47B24ECCF3C00DBA5AD /* ResumeShallowCopy.m in Sources */ = {isa = PBXBuildFile; fileRef = B64BE47A24ECCF3C00DBA5AD /* ResumeShallowCopy.m */; };
+		B64BE4E624EF5D3100DBA5AD /* TestPaper.m in Sources */ = {isa = PBXBuildFile; fileRef = B64BE4E524EF5D3100DBA5AD /* TestPaper.m */; };
+		B64BE4E924EF5E0600DBA5AD /* TestPaperA.m in Sources */ = {isa = PBXBuildFile; fileRef = B64BE4E824EF5E0600DBA5AD /* TestPaperA.m */; };
 		B653CC2924DBB0C600920C39 /* XCTest.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B62DAE9424DBB068006DD67A /* XCTest.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		B66685FA24EA21000007EE5F /* GamePad.m in Sources */ = {isa = PBXBuildFile; fileRef = B66685F924EA21000007EE5F /* GamePad.m */; };
 		B66685FD24EA222B0007EE5F /* GamePadDecorator.m in Sources */ = {isa = PBXBuildFile; fileRef = B66685FC24EA222B0007EE5F /* GamePadDecorator.m */; };
@@ -36,6 +38,7 @@
 		B670048224DBEBF9004094B7 /* CashNormal.m in Sources */ = {isa = PBXBuildFile; fileRef = B670048124DBEBF9004094B7 /* CashNormal.m */; };
 		B670048524DBEC85004094B7 /* CashRebeat.m in Sources */ = {isa = PBXBuildFile; fileRef = B670048424DBEC85004094B7 /* CashRebeat.m */; };
 		B670048824DBED69004094B7 /* CashReturn.m in Sources */ = {isa = PBXBuildFile; fileRef = B670048724DBED69004094B7 /* CashReturn.m */; };
+		B698CFF224EF5F170061478A /* TestPaperB.m in Sources */ = {isa = PBXBuildFile; fileRef = B698CFF124EF5F170061478A /* TestPaperB.m */; };
 		B6E6810E24DB9B5000A7D72A /* OperationAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E6810D24DB9B5000A7D72A /* OperationAdd.m */; };
 /* End PBXBuildFile section */
 
@@ -84,6 +87,10 @@
 		B64BE47724ECCD9F00DBA5AD /* ResumeDeepCopy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ResumeDeepCopy.m; sourceTree = "<group>"; };
 		B64BE47924ECCF3C00DBA5AD /* ResumeShallowCopy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ResumeShallowCopy.h; sourceTree = "<group>"; };
 		B64BE47A24ECCF3C00DBA5AD /* ResumeShallowCopy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ResumeShallowCopy.m; sourceTree = "<group>"; };
+		B64BE4E424EF5D3100DBA5AD /* TestPaper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestPaper.h; sourceTree = "<group>"; };
+		B64BE4E524EF5D3100DBA5AD /* TestPaper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestPaper.m; sourceTree = "<group>"; };
+		B64BE4E724EF5E0600DBA5AD /* TestPaperA.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestPaperA.h; sourceTree = "<group>"; };
+		B64BE4E824EF5E0600DBA5AD /* TestPaperA.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestPaperA.m; sourceTree = "<group>"; };
 		B66685F824EA21000007EE5F /* GamePad.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GamePad.h; sourceTree = "<group>"; };
 		B66685F924EA21000007EE5F /* GamePad.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GamePad.m; sourceTree = "<group>"; };
 		B66685FB24EA222B0007EE5F /* GamePadDecorator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GamePadDecorator.h; sourceTree = "<group>"; };
@@ -115,6 +122,8 @@
 		B670048424DBEC85004094B7 /* CashRebeat.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CashRebeat.m; sourceTree = "<group>"; };
 		B670048624DBED69004094B7 /* CashReturn.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CashReturn.h; sourceTree = "<group>"; };
 		B670048724DBED69004094B7 /* CashReturn.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CashReturn.m; sourceTree = "<group>"; };
+		B698CFF024EF5F170061478A /* TestPaperB.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestPaperB.h; sourceTree = "<group>"; };
+		B698CFF124EF5F170061478A /* TestPaperB.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestPaperB.m; sourceTree = "<group>"; };
 		B6E6810C24DB9B5000A7D72A /* OperationAdd.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OperationAdd.h; sourceTree = "<group>"; };
 		B6E6810D24DB9B5000A7D72A /* OperationAdd.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OperationAdd.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -133,6 +142,7 @@
 		B615601524DB961D002B2D84 = {
 			isa = PBXGroup;
 			children = (
+				B64BE4E024EF5CAB00DBA5AD /* 模版方法模式 */,
 				B64BE46F24ECC58C00DBA5AD /* 原型模式 */,
 				B666860924EA6BD00007EE5F /* 工厂模式 */,
 				B666860124EA62680007EE5F /* 代理模式 */,
@@ -210,6 +220,19 @@
 				B64BE47A24ECCF3C00DBA5AD /* ResumeShallowCopy.m */,
 			);
 			path = "原型模式";
+			sourceTree = "<group>";
+		};
+		B64BE4E024EF5CAB00DBA5AD /* 模版方法模式 */ = {
+			isa = PBXGroup;
+			children = (
+				B64BE4E424EF5D3100DBA5AD /* TestPaper.h */,
+				B64BE4E524EF5D3100DBA5AD /* TestPaper.m */,
+				B64BE4E724EF5E0600DBA5AD /* TestPaperA.h */,
+				B64BE4E824EF5E0600DBA5AD /* TestPaperA.m */,
+				B698CFF024EF5F170061478A /* TestPaperB.h */,
+				B698CFF124EF5F170061478A /* TestPaperB.m */,
+			);
+			path = "模版方法模式";
 			sourceTree = "<group>";
 		};
 		B66685F724EA20D50007EE5F /* 装饰模式 */ = {
@@ -347,10 +370,12 @@
 				B670048224DBEBF9004094B7 /* CashNormal.m in Sources */,
 				B666860524EA631A0007EE5F /* Intermediary.m in Sources */,
 				B615602924DB961D002B2D84 /* ViewController.m in Sources */,
+				B64BE4E624EF5D3100DBA5AD /* TestPaper.m in Sources */,
 				B64BE47224ECC62600DBA5AD /* WorkExperience.m in Sources */,
 				B670048524DBEC85004094B7 /* CashRebeat.m in Sources */,
 				B615602324DB961D002B2D84 /* AppDelegate.m in Sources */,
 				B666861424EA6E530007EE5F /* UndergraduateFactory.m in Sources */,
+				B698CFF224EF5F170061478A /* TestPaperB.m in Sources */,
 				B666860024EA23B10007EE5F /* CheatGamePadDecorator.m in Sources */,
 				B615603424DB9621002B2D84 /* main.m in Sources */,
 				B666861724EA6F0C0007EE5F /* VolunteerFactory.m in Sources */,
@@ -368,6 +393,7 @@
 				B66685FA24EA21000007EE5F /* GamePad.m in Sources */,
 				B64BE47524ECC7A000DBA5AD /* Resume.m in Sources */,
 				B66685FD24EA222B0007EE5F /* GamePadDecorator.m in Sources */,
+				B64BE4E924EF5E0600DBA5AD /* TestPaperA.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

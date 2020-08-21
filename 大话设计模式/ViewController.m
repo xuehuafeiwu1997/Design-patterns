@@ -16,6 +16,9 @@
 #import "VolunteerFactory.h"
 #import "ResumeShallowCopy.h"
 #import "ResumeDeepCopy.h"
+#import "TestPaper.h"
+#import "TestPaperA.h"
+#import "TestPaperB.h"
 
 @interface ViewController ()
 
@@ -33,7 +36,8 @@
 //    [self decoratorTest];//装饰模式
 //    [self proxyTest];//代理模式
 //    [self factoryTest];//工厂模式测试
-    [self protoTypeTest];//原型模式测试
+//    [self protoTypeTest];//原型模式测试
+    [self templateMethodTest];
 }
 
 //简单工厂测试
@@ -126,4 +130,20 @@
     [resume2 display];
     [resume3 display];
 }
+
+//模版模式测试
+- (void)templateMethodTest {
+    NSLog(@"学生甲抄的试卷:");
+    TestPaper *studentA = [[TestPaperA alloc] init];
+    [studentA testQuestion1];
+    [studentA testQuestion2];
+    [studentA testQuestion3];
+    
+    NSLog(@"学生乙抄的试卷:");
+    TestPaper *studentB = [[TestPaperB alloc] init];
+    [studentB testQuestion1];
+    [studentB testQuestion2];
+    [studentB testQuestion3];
+}
+
 @end
