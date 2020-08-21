@@ -39,6 +39,12 @@
 		B670048524DBEC85004094B7 /* CashRebeat.m in Sources */ = {isa = PBXBuildFile; fileRef = B670048424DBEC85004094B7 /* CashRebeat.m */; };
 		B670048824DBED69004094B7 /* CashReturn.m in Sources */ = {isa = PBXBuildFile; fileRef = B670048724DBED69004094B7 /* CashReturn.m */; };
 		B698CFF224EF5F170061478A /* TestPaperB.m in Sources */ = {isa = PBXBuildFile; fileRef = B698CFF124EF5F170061478A /* TestPaperB.m */; };
+		B698CFF624EF64830061478A /* NationalDebt1.m in Sources */ = {isa = PBXBuildFile; fileRef = B698CFF524EF64830061478A /* NationalDebt1.m */; };
+		B698CFF924EF64DF0061478A /* Realty1.m in Sources */ = {isa = PBXBuildFile; fileRef = B698CFF824EF64DF0061478A /* Realty1.m */; };
+		B698CFFC24EF656E0061478A /* Stock1.m in Sources */ = {isa = PBXBuildFile; fileRef = B698CFFB24EF656E0061478A /* Stock1.m */; };
+		B698CFFF24EF66770061478A /* Stock2.m in Sources */ = {isa = PBXBuildFile; fileRef = B698CFFE24EF66770061478A /* Stock2.m */; };
+		B698D00224EF66DB0061478A /* Stock3.m in Sources */ = {isa = PBXBuildFile; fileRef = B698D00124EF66DB0061478A /* Stock3.m */; };
+		B698D00524EF67820061478A /* Fund.m in Sources */ = {isa = PBXBuildFile; fileRef = B698D00424EF67820061478A /* Fund.m */; };
 		B6E6810E24DB9B5000A7D72A /* OperationAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E6810D24DB9B5000A7D72A /* OperationAdd.m */; };
 /* End PBXBuildFile section */
 
@@ -124,6 +130,18 @@
 		B670048724DBED69004094B7 /* CashReturn.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CashReturn.m; sourceTree = "<group>"; };
 		B698CFF024EF5F170061478A /* TestPaperB.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestPaperB.h; sourceTree = "<group>"; };
 		B698CFF124EF5F170061478A /* TestPaperB.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestPaperB.m; sourceTree = "<group>"; };
+		B698CFF424EF64830061478A /* NationalDebt1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NationalDebt1.h; sourceTree = "<group>"; };
+		B698CFF524EF64830061478A /* NationalDebt1.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NationalDebt1.m; sourceTree = "<group>"; };
+		B698CFF724EF64DF0061478A /* Realty1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Realty1.h; sourceTree = "<group>"; };
+		B698CFF824EF64DF0061478A /* Realty1.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Realty1.m; sourceTree = "<group>"; };
+		B698CFFA24EF656E0061478A /* Stock1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Stock1.h; sourceTree = "<group>"; };
+		B698CFFB24EF656E0061478A /* Stock1.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Stock1.m; sourceTree = "<group>"; };
+		B698CFFD24EF66770061478A /* Stock2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Stock2.h; sourceTree = "<group>"; };
+		B698CFFE24EF66770061478A /* Stock2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Stock2.m; sourceTree = "<group>"; };
+		B698D00024EF66DB0061478A /* Stock3.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Stock3.h; sourceTree = "<group>"; };
+		B698D00124EF66DB0061478A /* Stock3.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Stock3.m; sourceTree = "<group>"; };
+		B698D00324EF67820061478A /* Fund.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Fund.h; sourceTree = "<group>"; };
+		B698D00424EF67820061478A /* Fund.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Fund.m; sourceTree = "<group>"; };
 		B6E6810C24DB9B5000A7D72A /* OperationAdd.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OperationAdd.h; sourceTree = "<group>"; };
 		B6E6810D24DB9B5000A7D72A /* OperationAdd.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OperationAdd.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -142,6 +160,7 @@
 		B615601524DB961D002B2D84 = {
 			isa = PBXGroup;
 			children = (
+				B698CFF324EF62DE0061478A /* 外观模式 */,
 				B64BE4E024EF5CAB00DBA5AD /* 模版方法模式 */,
 				B64BE46F24ECC58C00DBA5AD /* 原型模式 */,
 				B666860924EA6BD00007EE5F /* 工厂模式 */,
@@ -294,6 +313,25 @@
 			path = "策略模式";
 			sourceTree = "<group>";
 		};
+		B698CFF324EF62DE0061478A /* 外观模式 */ = {
+			isa = PBXGroup;
+			children = (
+				B698CFF424EF64830061478A /* NationalDebt1.h */,
+				B698CFF524EF64830061478A /* NationalDebt1.m */,
+				B698CFF724EF64DF0061478A /* Realty1.h */,
+				B698CFF824EF64DF0061478A /* Realty1.m */,
+				B698CFFA24EF656E0061478A /* Stock1.h */,
+				B698CFFB24EF656E0061478A /* Stock1.m */,
+				B698CFFD24EF66770061478A /* Stock2.h */,
+				B698CFFE24EF66770061478A /* Stock2.m */,
+				B698D00024EF66DB0061478A /* Stock3.h */,
+				B698D00124EF66DB0061478A /* Stock3.m */,
+				B698D00324EF67820061478A /* Fund.h */,
+				B698D00424EF67820061478A /* Fund.m */,
+			);
+			path = "外观模式";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -367,13 +405,18 @@
 				B670047924DBEA0B004094B7 /* CashContext.m in Sources */,
 				B6273C7224DB9D8100892311 /* OperationMul.m in Sources */,
 				B6273C6F24DB9D0200892311 /* OperationSub.m in Sources */,
+				B698CFFC24EF656E0061478A /* Stock1.m in Sources */,
 				B670048224DBEBF9004094B7 /* CashNormal.m in Sources */,
 				B666860524EA631A0007EE5F /* Intermediary.m in Sources */,
+				B698CFF624EF64830061478A /* NationalDebt1.m in Sources */,
+				B698CFF924EF64DF0061478A /* Realty1.m in Sources */,
 				B615602924DB961D002B2D84 /* ViewController.m in Sources */,
 				B64BE4E624EF5D3100DBA5AD /* TestPaper.m in Sources */,
 				B64BE47224ECC62600DBA5AD /* WorkExperience.m in Sources */,
+				B698CFFF24EF66770061478A /* Stock2.m in Sources */,
 				B670048524DBEC85004094B7 /* CashRebeat.m in Sources */,
 				B615602324DB961D002B2D84 /* AppDelegate.m in Sources */,
+				B698D00524EF67820061478A /* Fund.m in Sources */,
 				B666861424EA6E530007EE5F /* UndergraduateFactory.m in Sources */,
 				B698CFF224EF5F170061478A /* TestPaperB.m in Sources */,
 				B666860024EA23B10007EE5F /* CheatGamePadDecorator.m in Sources */,
@@ -391,6 +434,7 @@
 				B670048824DBED69004094B7 /* CashReturn.m in Sources */,
 				B670047C24DBEA55004094B7 /* CashSuper.m in Sources */,
 				B66685FA24EA21000007EE5F /* GamePad.m in Sources */,
+				B698D00224EF66DB0061478A /* Stock3.m in Sources */,
 				B64BE47524ECC7A000DBA5AD /* Resume.m in Sources */,
 				B66685FD24EA222B0007EE5F /* GamePadDecorator.m in Sources */,
 				B64BE4E924EF5E0600DBA5AD /* TestPaperA.m in Sources */,

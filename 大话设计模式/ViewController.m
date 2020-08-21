@@ -19,6 +19,7 @@
 #import "TestPaper.h"
 #import "TestPaperA.h"
 #import "TestPaperB.h"
+#import "Fund.h"
 
 @interface ViewController ()
 
@@ -37,7 +38,8 @@
 //    [self proxyTest];//代理模式
 //    [self factoryTest];//工厂模式测试
 //    [self protoTypeTest];//原型模式测试
-    [self templateMethodTest];
+//    [self templateMethodTest];//模版方法模式
+    [self facadeTest];
 }
 
 //简单工厂测试
@@ -144,6 +146,12 @@
     [studentB testQuestion1];
     [studentB testQuestion2];
     [studentB testQuestion3];
+}
+
+- (void)facadeTest {
+    Fund *fund = [[Fund alloc] init];
+    [fund buyFund];
+    [fund sellFund];
 }
 
 @end
