@@ -45,6 +45,9 @@
 		B698CFFF24EF66770061478A /* Stock2.m in Sources */ = {isa = PBXBuildFile; fileRef = B698CFFE24EF66770061478A /* Stock2.m */; };
 		B698D00224EF66DB0061478A /* Stock3.m in Sources */ = {isa = PBXBuildFile; fileRef = B698D00124EF66DB0061478A /* Stock3.m */; };
 		B698D00524EF67820061478A /* Fund.m in Sources */ = {isa = PBXBuildFile; fileRef = B698D00424EF67820061478A /* Fund.m */; };
+		B698D00A24EF6E820061478A /* PersonDirector.m in Sources */ = {isa = PBXBuildFile; fileRef = B698D00924EF6E820061478A /* PersonDirector.m */; };
+		B698D00D24EF6FE90061478A /* PersonFatBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = B698D00C24EF6FE90061478A /* PersonFatBuilder.m */; };
+		B698D01024EF71080061478A /* PersonThinBuilder.m in Sources */ = {isa = PBXBuildFile; fileRef = B698D00F24EF71080061478A /* PersonThinBuilder.m */; };
 		B6E6810E24DB9B5000A7D72A /* OperationAdd.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E6810D24DB9B5000A7D72A /* OperationAdd.m */; };
 /* End PBXBuildFile section */
 
@@ -142,6 +145,13 @@
 		B698D00124EF66DB0061478A /* Stock3.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Stock3.m; sourceTree = "<group>"; };
 		B698D00324EF67820061478A /* Fund.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Fund.h; sourceTree = "<group>"; };
 		B698D00424EF67820061478A /* Fund.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Fund.m; sourceTree = "<group>"; };
+		B698D00724EF6CE20061478A /* PersonBuilder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PersonBuilder.h; sourceTree = "<group>"; };
+		B698D00824EF6E820061478A /* PersonDirector.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PersonDirector.h; sourceTree = "<group>"; };
+		B698D00924EF6E820061478A /* PersonDirector.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PersonDirector.m; sourceTree = "<group>"; };
+		B698D00B24EF6FE90061478A /* PersonFatBuilder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PersonFatBuilder.h; sourceTree = "<group>"; };
+		B698D00C24EF6FE90061478A /* PersonFatBuilder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PersonFatBuilder.m; sourceTree = "<group>"; };
+		B698D00E24EF71080061478A /* PersonThinBuilder.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PersonThinBuilder.h; sourceTree = "<group>"; };
+		B698D00F24EF71080061478A /* PersonThinBuilder.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PersonThinBuilder.m; sourceTree = "<group>"; };
 		B6E6810C24DB9B5000A7D72A /* OperationAdd.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OperationAdd.h; sourceTree = "<group>"; };
 		B6E6810D24DB9B5000A7D72A /* OperationAdd.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OperationAdd.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -160,6 +170,7 @@
 		B615601524DB961D002B2D84 = {
 			isa = PBXGroup;
 			children = (
+				B698D00624EF6CBD0061478A /* 建造者模式 */,
 				B698CFF324EF62DE0061478A /* 外观模式 */,
 				B64BE4E024EF5CAB00DBA5AD /* 模版方法模式 */,
 				B64BE46F24ECC58C00DBA5AD /* 原型模式 */,
@@ -332,6 +343,20 @@
 			path = "外观模式";
 			sourceTree = "<group>";
 		};
+		B698D00624EF6CBD0061478A /* 建造者模式 */ = {
+			isa = PBXGroup;
+			children = (
+				B698D00724EF6CE20061478A /* PersonBuilder.h */,
+				B698D00824EF6E820061478A /* PersonDirector.h */,
+				B698D00924EF6E820061478A /* PersonDirector.m */,
+				B698D00B24EF6FE90061478A /* PersonFatBuilder.h */,
+				B698D00C24EF6FE90061478A /* PersonFatBuilder.m */,
+				B698D00E24EF71080061478A /* PersonThinBuilder.h */,
+				B698D00F24EF71080061478A /* PersonThinBuilder.m */,
+			);
+			path = "建造者模式";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -411,6 +436,8 @@
 				B698CFF624EF64830061478A /* NationalDebt1.m in Sources */,
 				B698CFF924EF64DF0061478A /* Realty1.m in Sources */,
 				B615602924DB961D002B2D84 /* ViewController.m in Sources */,
+				B698D01024EF71080061478A /* PersonThinBuilder.m in Sources */,
+				B698D00A24EF6E820061478A /* PersonDirector.m in Sources */,
 				B64BE4E624EF5D3100DBA5AD /* TestPaper.m in Sources */,
 				B64BE47224ECC62600DBA5AD /* WorkExperience.m in Sources */,
 				B698CFFF24EF66770061478A /* Stock2.m in Sources */,
@@ -419,6 +446,7 @@
 				B698D00524EF67820061478A /* Fund.m in Sources */,
 				B666861424EA6E530007EE5F /* UndergraduateFactory.m in Sources */,
 				B698CFF224EF5F170061478A /* TestPaperB.m in Sources */,
+				B698D00D24EF6FE90061478A /* PersonFatBuilder.m in Sources */,
 				B666860024EA23B10007EE5F /* CheatGamePadDecorator.m in Sources */,
 				B615603424DB9621002B2D84 /* main.m in Sources */,
 				B666861724EA6F0C0007EE5F /* VolunteerFactory.m in Sources */,

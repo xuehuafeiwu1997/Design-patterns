@@ -20,6 +20,9 @@
 #import "TestPaperA.h"
 #import "TestPaperB.h"
 #import "Fund.h"
+#import "PersonThinBuilder.h"
+#import "PersonFatBuilder.h"
+#import "PersonDirector.h"
 
 @interface ViewController ()
 
@@ -39,7 +42,8 @@
 //    [self factoryTest];//工厂模式测试
 //    [self protoTypeTest];//原型模式测试
 //    [self templateMethodTest];//模版方法模式
-    [self facadeTest];
+//    [self facadeTest];//外观模式
+    [self builderTest];//建造者模式
 }
 
 //简单工厂测试
@@ -148,10 +152,22 @@
     [studentB testQuestion3];
 }
 
+//外观模式测试
 - (void)facadeTest {
     Fund *fund = [[Fund alloc] init];
     [fund buyFund];
     [fund sellFund];
+}
+
+//建造者模式测试
+- (void)builderTest {
+    id<PersonBuilder> personBuilder = [[PersonThinBuilder alloc] init];
+    PersonDirector *personDirector = [[PersonDirector alloc] initWithPersonBuilder:personBuilder];
+    [personDirector builderSon];
+    
+    personBuilder = [[PersonFatBuilder alloc] init];
+    personDirector = [[PersonDirector alloc] initWithPersonBuilder:personBuilder];
+    [personDirector builderSon];
 }
 
 @end
